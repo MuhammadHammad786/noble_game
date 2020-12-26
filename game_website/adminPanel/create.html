@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel</title>
+    <!-- TYPOGRAPHY -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&family=Roboto:wght@300;400;500;700;900&display=swap"
+        rel="stylesheet">
+
+    <!-- UNIVERSAL STYLESHEET -->
+    <link rel="stylesheet" href="../assets/css/style.css">
+
+    <!-- BOOTSTRAP CSS -->
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="../assets/css/admin.css">
+
+    <link rel="stylesheet" href="../assets/css/adminCreate.css">
+
+    <!-- FONT ICONS KIT -->
+    <script src="https://kit.fontawesome.com/74d240b4ae.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <section class="admin">
+        <div class="row">
+            <div class="col-sm-3">
+                <aside>
+                    <div class="sideLink">
+                        <i class="fas fa-angle-left"></i>
+                        <a href="../index.html">Back to organization</a>
+                    </div>
+                    <div class="sideLink Breakers">
+                        <a href="#">Battle Breakers</a>
+                    </div>
+                    <div class="sideLink">
+                        <i class="fas fa-globe"></i>
+                        <a href="#">Noble Game Store</a>
+                    </div>
+                    <div class="sideLink">
+                        <i class="fab fa-servicestack"></i>
+                        <a href="#">Game Services</a>
+                    </div>
+                    <div class="sideLink">
+                        <i class="fas fa-chart-line"></i>
+                        <a href="#">Game Analytics</a>
+                    </div>
+                    <div class="sideLink">
+                        <i class="fas fa-user"></i>
+                        <a href="./account_service.html">Noble Account Services</a>
+                    </div>
+                    <div class="sideLink">
+                        <i class="far fa-envelope"></i>
+                        <a href="#">Player Ticketing</a>
+                    </div>
+                </aside>
+            </div>
+            <div class="col-sm-9">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="createLeft">
+                            <h6>
+                                Use Battle Breakers for your Noble Game Account
+                            </h6>
+                            <div class="badgeC">
+                                <div class="NobleLogo">
+                                    <span>
+                                        Noble
+                                        <br>
+                                        <p class="game">
+                                            Games
+                                        </p>
+                                    </span>
+                                </div>
+                                <div class="mr-3 ml-3" style="display: flex;align-items: center;font-size: 20px;">
+                                    <i class="fas fa-exchange-alt"></i>
+                                </div>
+                                <div class="gameImg">
+                                    <img src="../assets/images/game1.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="permission">
+                                <p class="bold">
+                                    With your permission Noble Games will:
+                                </p>
+                                <div class="d-flex">
+                                    <div style="font-size: 18px;color: #fff;" class="mr-3">
+                                        <i class="fas fa-user-circle"></i>
+                                    </div>
+                                    <div>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus dolorum
+                                            blanditiis,
+                                        </p>
+                                    </div>
+                                </div>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Est dolores odio animi
+                                    sapiente temporibus
+                                </p>
+                                <p>
+                                    Don't know how what this means?
+                                    <a href="" style="color: #fff;">
+                                        Click Here to learn more.
+                                    </a>
+                                </p>
+                                <div class="leftBtn">
+                                    <button class="button">
+                                        CANCEL
+                                    </button>
+                                    <button class="button allow">
+                                        ALLOW
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 tabsMain">
+                        <div class="tab">
+                            <button class="tablinks" onclick="openCity(event, 'London')">Brand Setting</button>
+                            <button class="tablinks" onclick="openCity(event, 'Paris')">
+                                Permission</button>
+                            <button class="tablinks" onclick="openCity(event, 'Tokyo')">Cleints </button>
+                        </div>
+
+                        <!-- <div id="London" class="tabcontent" style="display:block;">
+                            <input type="text" class="postInput" placeholder="What's on your mind?">
+                            <div class="bottom">
+                                <div>
+                                    <i class="fa fa-user-plus"></i>
+                                </div>
+                                <div>
+                                    <button class="button">
+                                        Share
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="Paris" class="tabcontent">
+                            <input type="file" class="postInput">
+                            <div class="bottom">
+                                <div>
+                                    <i class="fa fa-user-plus"></i>
+                                </div>
+                                <div>
+                                    <button class="button">
+                                        Share
+                                    </button>
+                                </div>
+                            </div>
+                        </div> -->
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <script>
+        function openCity(evt, cityName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(cityName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+    </script>
+</body>
+
+</html>
